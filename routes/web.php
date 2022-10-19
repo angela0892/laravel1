@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 //Lamamos a todos los controladores que usaremos
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\ProductoController;
-use App\Http\controllers\Luis;
-use App\Http\controllers\CustomerController;
-use App\Http\controllers\OficinaController;
-
+use App\Http\Controllers\Luis;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\OficinaController;
+use App\Http\Controllers\PedidosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,4 +40,5 @@ Route::get('/cliente', [CustomerController::class, 'listar'] );
 
 Route::get('/oficinas', [OficinaController::class, 'listar'] );
 
+Route::get('/pedidos', [pedidosController::class, 'listar'] );
 
